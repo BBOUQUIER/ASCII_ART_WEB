@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Art Web</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type= "png" href="assets/ASCII.png">
+</head>
+<body>
+    <div class="FormBox">
+
+        <!-- creating the form that will be filled by the user -->
+        <form action="/ascii-art" method="get" autocomplete="off">
+
+            <h3>Welcome to our<br> ASCII-ART Web project</h3>
+
+            <!-- Initializing the input section that will be converted to ASCII -->
+            <input type="text" name="StringToAscii" value="Type\nSomething">
+
+            <!-- Help button -->
+            <p class="interro" style="text-align: justify;">?<span>Write \n to print newlines<br><br>
+            Characters lower than 32 and higher than 126 in Ascii Table are not allowed</span></p>
+            <br><br><br>
+
+            <!-- Choosing the Police Style wanted -->
+            <p>Banners</p>
+            <select name="PoliceStyle" id="Banner">
+                <option value="standard">   Standard</option>
+                <option value="shadow">     Shadow</option>
+                <option value="thinkertoy"> Thinkertoy</option>
+            </select>
+            
+            
+            <p>Colors</p>
+            <input type="color" name="Colorize" value="#FFFFFF" class="ColorBox">
+            
+            <p>Justify</p>
+            <input type="radio" name="Justify" value="center" checked="checked">
+                <label class="Dot">Center</label><br>
+            <input type="radio" name="Justify" value="left">
+                <label class="Dot">Left</label><br>
+            <input type="radio" name="Justify" value="right">
+                <label class="Dot">Right</label>
+            <br><br>
+
+            <input class="submit" type="submit" value="Submit"><br><br>
+
+            <p class="names">Made by Alexis, Baptiste, Elodie, Clément and Sven.</p>
+        </form>
+    </div>
+</body>
+</html>
